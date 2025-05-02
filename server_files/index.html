@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GraphSAGE Interactive Demo</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="style.css">  <!-- External CSS file for styling -->
+</head>
+<body>
+
+    <h1>GraphSAGE: Interactive Node Aggregation</h1>
+    <p>This interactive graph demonstrates how GraphSAGE aggregates information from neighboring nodes.</p>
+    
+    <svg id="graph"></svg>
+    <div style="text-align: center;">
+        <button onclick="updateGraph(1)">First Layer Aggregation</button>
+        <button onclick="updateGraph(2)">Second Layer Aggregation</button>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="app.js"></script>
+</body>
+</html>
